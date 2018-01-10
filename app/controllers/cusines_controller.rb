@@ -1,6 +1,6 @@
 class CusinesController < ApplicationController
   def index
-    @cusines = Cusine.all
+    @cusines = Cusine.page(params[:page]).per(10)
 
     render("cusines/index.html.erb")
   end
