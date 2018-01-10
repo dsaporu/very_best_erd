@@ -20,7 +20,7 @@
       <tr>
         <td><%= bookmark.dish.name %></td>
         <td><%= bookmark.venue.name %></td>
-        <td><%= bookmark.user_id %></td>
+        <td><%= bookmark.user.created_at %></td>
         <td><%= bookmark.notes %></td>
         <td>
           <a href="/bookmarks/<%= bookmark.id %>" class="btn btn-primary">Show</a>
