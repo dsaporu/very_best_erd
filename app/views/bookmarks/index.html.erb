@@ -19,7 +19,7 @@
       <% @bookmarks.each do |bookmark| %>
       <tr>
         <td><%= bookmark.dish.name %></td>
-        <td><%= bookmark.venue_id %></td>
+        <td><%= bookmark.venue.name %></td>
         <td><%= bookmark.user_id %></td>
         <td><%= bookmark.notes %></td>
         <td>
