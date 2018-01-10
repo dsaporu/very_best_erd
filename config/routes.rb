@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the Cusine resource:
+  # CREATE
+  get "/cusines/new", :controller => "cusines", :action => "new"
+  post "/create_cusine", :controller => "cusines", :action => "create"
+
+  # READ
+  get "/cusines", :controller => "cusines", :action => "index"
+  get "/cusines/:id", :controller => "cusines", :action => "show"
+
+  # UPDATE
+  get "/cusines/:id/edit", :controller => "cusines", :action => "edit"
+  post "/update_cusine/:id", :controller => "cusines", :action => "update"
+
+  # DELETE
+  get "/delete_cusine/:id", :controller => "cusines", :action => "destroy"
+  #------------------------------
+
   # Routes for the Bookmark resource:
   # CREATE
   get "/bookmarks/new", :controller => "bookmarks", :action => "new"
